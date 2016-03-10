@@ -37,47 +37,47 @@ begin
 
   ---------------------------------------- Основные группы
   mID := mCommunalID;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, null, 'COMMUNAL',
          'Общая единица', 'Единицы общего характера');
 
   mID := mExactingID;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, null, 'EXACTING',
          'Точная единица', 'Точные науки: математика и информатика');
 
   mID := mPhysicalID;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, null, 'PHYSICAL',
          'Естественная единица',
          'Естественные науки: физика, химия, ...');
 
   mID := mNaturaleID;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, null, 'NATURALE',
          'Природная единица',
          'Природные науки: биология, география, медицина, ...');
 
   mID := mSocietalID;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, null, 'SOCIETAL',
          'Общественная единица',
          'Общественные науки: экономика, ...');
 
   mID := mTexnicalID;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, null, 'TEXNICAL',
          'Техническая единица',
          'Технические и промышленные дисциплины');
 
   mID := mSeparateID;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, null, 'SEPARATE',
          'Отдельная единица',
@@ -89,14 +89,14 @@ begin
   mParentID := mPhysicalID; -- Естественная единица
 
   mID := mMechanicID;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'MECHANIC',
          'Механическая единица',
          'Единицы в механических дисциплинах');
 
   mID := mMoleculeID;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'MOLECULE',
          'Молекулярная единица',
@@ -104,14 +104,14 @@ begin
          'термодинамике и статистической физике');
 
   mID := mEleMagnoID;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'ELEMAGNO',
          'Электромагнитная единица',
          'Единицы в электромагнетизме и атомной физике');
 
   mID := mNuclearoID;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'NUCLEARO',
          'Ядерная единица',
@@ -123,7 +123,7 @@ begin
   mParentID := mSocietalID; -- Общественная единица
 
   mID := mEconomicID;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'ECONOMIC',
          'Экономическая единица',
@@ -136,7 +136,7 @@ begin
   mID := mParentID * mFactor;
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'CALCUL', 'Счёт', 'Счётные единицы');
 
@@ -147,12 +147,12 @@ begin
   mID := mParentID * mFactor;
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'AMOUNT', 'Величина', null);
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'INFORM', 'Информация', null);
 
@@ -167,42 +167,42 @@ begin
   mID := mParentID * mFactor;
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'LENGTH', 'Длина', null);
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'SQUARE', 'Площадь', null);
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'VOLUME', 'Объём', null);
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'MASS', 'Масса', null);
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'TEMP', 'Время', null);
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'MOTION', 'Движение', null);
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'ACTION', 'Действие', null);
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'WAVING', 'Волна', null);
 
@@ -213,17 +213,17 @@ begin
   mID := mParentID * mFactor;
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'MATTER', 'Вещество', null);
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'HEAT', 'Теплота', null);
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'TEMPER', 'Температура', null);
 
@@ -234,17 +234,17 @@ begin
   mID := mParentID * mFactor;
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'ELECTRO', 'Электричество', null);
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'MAGNETO', 'Магнетизм', null);
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'RADIATO', 'Излучение', null);
 
@@ -255,7 +255,7 @@ begin
   mID := mParentID * mFactor;
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'NUCLEO', 'Ядро', null);
 
@@ -274,17 +274,17 @@ begin
   mID := mParentID * mFactor;
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'NUMBER', 'Количество', null);
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'BOXING', 'Упаковка', null);
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'MONETA', 'Деньги', null);
 
@@ -295,44 +295,44 @@ begin
   mID := mParentID * mFactor;
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'COMMLINE', 'Коммуникация',
          'Информация и связь');
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'ENERGY', 'Энергетика',
          'Производство, преобразование, распределение ' ||
          'и использование энергетических ресурсов');
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'WATERY', 'Гидротехника',
          'Водоснабжение и водоотведение');
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'AGRONOMY', 'Агрономия',
          'Сельское хозяйство и производство сырья');
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'INDUSTRY', 'Промышленность',
          'Добывающая и обрабатывающая промышленность');
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'BUILDING', 'Строительство',
          'Возведение и ремонт зданий и сооружений');
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'TRANSFER', 'Транспорт',
          'Транспортировка и складское хозяйство');
@@ -344,7 +344,7 @@ begin
   mID := mParentID * mFactor;
 
   mID := mID + 1;
-  insert into rm_lst_measure_group
+  insert into list_measure_group
         (id, parent_id, strcod, name, notice)
   values(mID, mParentID, 'ELSE', 'Другое', null);
 
