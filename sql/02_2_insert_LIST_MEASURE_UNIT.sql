@@ -36,6 +36,12 @@ begin
   close cGroupID;
 
   if (mGroupID > 0) then
+    -------- Количество
+    insert into list_measure_unit
+          (id, group_id, strcod, name, symb, effect, relate, notice)
+    values(1000, mGroupID, 'FOLD', 'раз', 'раз',
+           'Количество повторений', null, null);
+
     -------- Единица
     mID := mID + 1;
     insert into list_measure_unit
