@@ -1,0 +1,27 @@
+Measures scripts set
+
+[Info]
+Ver. : 1.1.0.0
+Date : 2017-02-18
+Ware : Freeware
+Lic. : MIT
+Reqs : DB
+Type : Scripts
+Desc : Scripts set of/for measure units
+
+Auth : A.I. Rakhmatullin
+       / А.И. Рахматуллин
+Addr : RF, RT, Kazan
+       / РФ, РТ, Казань
+Copy : 2016/2017+
+
+Home : http://raidar.github.com/index.htm
+
+Repo : https://github.com/Raidar/Measures
+
+[Anons]
+  Measures is a set of SQL scripts to store Measures` data in DB.
+
+  Меры — набор SQL‑скриптов для хранения данных о мерах в БД.
+
+―――――――
