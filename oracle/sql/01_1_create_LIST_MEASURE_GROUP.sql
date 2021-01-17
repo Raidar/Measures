@@ -36,7 +36,7 @@ alter table LIST_MEASURE_GROUP
   add constraint LIST_MEASURE_GROUP_PK primary key (ID);
 
 alter table LIST_MEASURE_GROUP
-  add constraint LIST_MEASURE_GRPAR_FK foreign key (PARENT_ID)
+  add constraint LIST_MEASURE_GROUP_PID_FK foreign key (PARENT_ID)
       references LIST_MEASURE_GROUP (ID);
   
 -- Sequence
