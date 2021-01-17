@@ -58,7 +58,7 @@ begin
   mID := mNaturaleID;
   insert into list_measure_group
         (id, parent_id, strcod, name, notice)
-  values(mID, null, 'NATURALE',
+  values(mID, null, 'NATURAL',
          'Природная единица',
          'Природные науки: биология, география, медицина, ...');
 
@@ -72,14 +72,14 @@ begin
   mID := mTexnicalID;
   insert into list_measure_group
         (id, parent_id, strcod, name, notice)
-  values(mID, null, 'TEXNICAL',
+  values(mID, null, 'TECHNICAL',
          'Техническая единица',
          'Технические и промышленные дисциплины');
 
   mID := mSeparateID;
   insert into list_measure_group
         (id, parent_id, strcod, name, notice)
-  values(mID, null, 'SEPARATE',
+  values(mID, null, 'SEPARATED',
          'Отдельная единица',
          'Неклассифицированные и неопределённые единицы');
 
